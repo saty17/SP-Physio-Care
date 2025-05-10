@@ -46,15 +46,26 @@
 }
 
 :root {
-    --primary-color: #1C1C1C;    /* Pure black – strong contrast */
-    --accent-color: #312F2F;     /* Rich charcoal – hover effects */
-    --accent-color-1: #D4AF37;   /* Gold – luxurious accents */
-    --danger-color: #FF3B3B;     /* Fiery red – high-visibility alerts */
-    --bg-color-2: #F5F5DC;       /* Soft beige – warm background */
-    --gray-color: #9E9E9E;       /* Light gray – subtle text elements */
+    --primary-color: #1B4965;    /* Deep ocean blue – professional and calming */
+    --accent-color: #2E6F95;     /* Teal blue – buttons and highlights */
+    --accent-color-1: #62B6CB;   /* Light teal – hover effects */
+    --danger-color: #E63946;     /* Soft red – alerts */
+    --bg-color-2: #F1F5F9;       /* Pale blue-white – clean background */
+    --gray-color: #FFFFFF;       /* Slate gray – subtle text */
     --font-1: 'Montserrat', sans-serif;
     --font-2: 'Raleway', sans-serif;
 }
+
+/* :root {
+    --primary-color: #1C1C1C;    
+    --accent-color: #312F2F;     
+    --accent-color-1: #D4AF37;   
+    --danger-color: #FF3B3B;     
+    --bg-color-2: #F5F5DC;       
+    --gray-color: #9E9E9E;       
+    --font-1: 'Montserrat', sans-s
+    --font-2: 'Raleway', sans-serif;
+} */
 
 
 
