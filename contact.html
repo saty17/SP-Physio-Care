@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact SP Physio Care for inquiries, appointments, or support. Reach us via phone, email, or our contact form.">
     <!-- Favicon -->
     <link rel="icon" href="image/favicon.png" type="image/png">
     <!-- Stylesheet -->
@@ -12,22 +13,13 @@
 </head>
 
 <body>
-    <!-- Scripts -->
-    <script src="js/vendor/bootstrap.bundle.min.js"></script>
-    <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/vendor/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/swiper-script.js"></script>
-    <script src="js/submit-form.js"></script>
-    <script src="js/vendor/isotope.pkgd.min.js"></script>
-
     <!-- Header -->
     <section class="sticky-top bg-accent-color-1">
         <div class="r-container">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <div class="logo-container">
-                        <img src="image/logo.png" alt="" class="img-fluid">
+                        <img src="image/logo.png" alt="SP Physio Care Logo" class="img-fluid">
                     </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -49,8 +41,7 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="services.html">Services</a></li>
-                                    <li><a class="dropdown-item" href="service_detail.html">Service Detail</a>
-                                    </li>
+                                    <li><a class="dropdown-item" href="service_detail.html">Service Detail</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -62,7 +53,6 @@
                                     <li><a class="dropdown-item" href="appointment.html">Appointment</a></li>
                                     <li><a class="dropdown-item" href="therapist.html">Therapist</a></li>
                                     <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
-                                    
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -104,7 +94,7 @@
                     <h3 class="accent-color font-1 fw-semibold">Contact Us</h3>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
                         </ol>
                     </nav>
@@ -199,7 +189,7 @@
                                 <div class="d-flex p-2">
                                     <div class="toast-body f-18 d-flex flex-row gap-3 align-items-center text-success">
                                         <i class="fa-solid fa-check f-36 text-success"></i>
-                                        Your Message Successfully Send.
+                                        Your Message Successfully Sent.
                                     </div>
                                     <button type="button"
                                         class="me-2 m-auto bg-transparent border-0 ps-1 pe-0 text-success"
@@ -212,7 +202,7 @@
                                 <div class="d-flex p-2">
                                     <div class="toast-body f-18 d-flex flex-row gap-3 align-items-center text-danger">
                                         <i class="fa-solid fa-triangle-exclamation f-36 text-danger"></i>
-                                        Something Wrong ! Send Form Failed.
+                                        Something Went Wrong! Please Try Again.
                                     </div>
                                     <button type="button"
                                         class="me-2 m-auto bg-transparent border-0 ps-1 pe-0 text-danger"
@@ -231,6 +221,15 @@
                                     </div>
                                 </div>
                                 <div class="mb-3">
+                                    <input type="tel" class="form-control py-3 px-4" name="phone" id="phone"
+                                        placeholder="Phone (e.g., 9876543210)" pattern="[6-9][0-9]{9}"
+                                        title="Please enter a valid 10-digit Indian phone number starting with 6, 7, 8, or 9"
+                                        required>
+                                    <div class="invalid-feedback">
+                                        Please enter a valid 10-digit Indian phone number starting with 6, 7, 8, or 9.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
                                     <input type="email" class="form-control py-3 px-4" name="email" id="email"
                                         placeholder="Email" required>
                                     <div class="invalid-feedback">
@@ -246,7 +245,10 @@
                                 </div>
                                 <div class="mb-3">
                                     <textarea class="form-control py-3 px-4" id="message" name="message" rows="5"
-                                        placeholder="Message"></textarea>
+                                        placeholder="Message" required></textarea>
+                                    <div class="invalid-feedback">
+                                        The field is required.
+                                    </div>
                                 </div>
                                 <div class="mb-3">
                                     <button type="submit" class="btn submit_form py-3">
@@ -254,7 +256,6 @@
                                     </button>
                                 </div>
                             </form>
-
                         </div>
                     </div>
                 </div>
@@ -271,7 +272,6 @@
                 </div>
             </div>
         </section>
-
     </main>
 
     <footer>
@@ -281,7 +281,7 @@
                     <div class="col col-lg-4">
                         <div class="d-flex flex-column gap-3 text-white">
                             <div class="logo-container">
-                                <img src="image/logo.png" alt="" class="img-fluid">
+                                <img src="image/logo.png" alt="SP Physio Care Logo" class="img-fluid">
                             </div>
                             <p>
                                 At SP Physio Care, we specialize in personalized physiotherapy solutions to help you regain strength, mobility, and a pain-free life. Whether you're recovering from an injury, managing chronic pain, or preparing for surgery, our expert care is tailored to meet your unique needs.
@@ -308,37 +308,37 @@
                                 <h5 class="font-2 mb-3">Quick Links</h5>
                                 <ul class="list gap-2">
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="index.html" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Home
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="about_us.html" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             About Us
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="services.html" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Services
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="appointment.html" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Appointment
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="blog.html" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Blog
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="contact.html" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Contact Us
                                         </a>
@@ -349,38 +349,37 @@
                                 <h5 class="font-2 mb-3">Services</h5>
                                 <ul class="list gap-2">
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="service_detail.html?service=musculoskeletal" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Musculoskeletal Physiotherapy
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="service_detail.html?service=osteoarthritis" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Osteoarthritis Management
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="service_detail.html?service=geriatric" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
-                                            Geriatric
-Physiotherapy
+                                            Geriatric Physiotherapy
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="service_detail.html?service=pain_management" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Pain Management
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="service_detail.html?service=electrotherapy" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Electrotherapy
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="service_detail.html?service=exercise_therapy" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Exercise Therapy
                                         </a>
@@ -427,6 +426,14 @@ Physiotherapy
         </section>
     </footer>
 
+    <!-- Scripts -->
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/swiper-script.js"></script>
+    <script src="js/submit-form.js"></script>
+    <script src="js/vendor/isotope.pkgd.min.js"></script>
     <script src="js/vendor/fslightbox.js"></script>
     <script src="js/masonry.js"></script>
 </body>

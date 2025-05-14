@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book an appointment with SP Physio Care for personalized physiotherapy solutions. Schedule a clinic or home visit today.">
     <!-- Favicon -->
     <link rel="icon" href="image/favicon.png" type="image/png">
     <!-- Stylesheet -->
@@ -12,22 +13,13 @@
 </head>
 
 <body>
-    <!-- Scripts -->
-    <script src="js/vendor/bootstrap.bundle.min.js"></script>
-    <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/vendor/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/swiper-script.js"></script>
-    <script src="js/submit-form.js"></script>
-    <script src="js/vendor/isotope.pkgd.min.js"></script>
-
     <!-- Header -->
     <section class="sticky-top bg-accent-color-1">
         <div class="r-container">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <div class="logo-container">
-                        <img src="image/logo.png" alt="" class="img-fluid">
+                        <img src="image/logo.png" alt="SP Physio Care Logo" class="img-fluid">
                     </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -49,8 +41,7 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="services.html">Services</a></li>
-                                    <li><a class="dropdown-item" href="service_detail.html">Service Detail</a>
-                                    </li>
+                                    <li><a class="dropdown-item" href="service_detail.html">Service Detail</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -62,7 +53,6 @@
                                     <li><a class="dropdown-item active" href="appointment.html">Appointment</a></li>
                                     <li><a class="dropdown-item" href="therapist.html">Therapist</a></li>
                                     <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
-                                    
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -104,7 +94,7 @@
                     <h3 class="accent-color font-1 fw-semibold">Appointment</h3>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Appointment</li>
                         </ol>
                     </nav>
@@ -118,9 +108,7 @@
                     <h6 class="fw-semibold font-1 accent-color-1 ls-2">BOOKING</h6>
                     <h3 class="accent-color font-1 fw-semibold">Make An Appointment</h3>
                     <p class="font-2 fw-light mx-auto" style="max-width: 912px;">
-                        Maecenas dictum fringilla nisi ac malesuada. Donec ac quam non diam elementum ultricies. In hac
-                        habitasse platea dictumst. Nullam eu elit sed metus convallis lobortis. Cras a iaculis eros.
-                        Phasellus at lectus viverra, sagittis erat quis.
+                        Booking your appointment is quick and easy. Whether you're seeking relief, recovery, or regular care, our expert team is here to help. Schedule online or call us today — your journey to better health starts here.
                     </p>
                     <div>
                         <div class="toast-container position-fixed bottom-0 end-0 p-3">
@@ -128,7 +116,7 @@
                                 role="alert" aria-live="assertive" aria-atomic="true">
                                 <div class="d-flex">
                                     <div class="toast-body">
-                                        Your Appointment Message Send Successfully!.
+                                        Your Appointment Message Sent Successfully!
                                     </div>
                                     <button type="button" class="btn me-2 m-auto text-white" data-bs-dismiss="toast"
                                         aria-label="Close">
@@ -139,6 +127,7 @@
                         </div>
                         <form 
                             class="d-flex flex-column h-100 justify-content-center w-100 needs-validation form"
+                            id="appointmentForm"
                             novalidate>
                             <input type="text" name="action" value="appointment" hidden>
                             <div class="mb-3">
@@ -150,9 +139,11 @@
                             </div>
                             <div class="mb-3">
                                 <input type="tel" class="form-control py-3 px-4" name="phone" id="phone"
-                                    placeholder="Phone" required>
+                                    placeholder="Phone (e.g., 9876543210)" pattern="[6-9][0-9]{9}"
+                                    title="Please enter a valid 10-digit Indian phone number starting with 6, 7, 8, or 9"
+                                    required>
                                 <div class="invalid-feedback">
-                                    The field is required.
+                                    Please enter a valid 10-digit Indian phone number starting with 6, 7, 8, or 9.
                                 </div>
                             </div>
                             <div class="mb-3">
@@ -162,24 +153,38 @@
                                     The field is required.
                                 </div>
                             </div>
-                            <div class="row row-cols-1 row-cols-lg-2">
+                            <div class="row row-cols-1 row-cols-lg-3">
                                 <div class="col mb-3">
                                     <select name="service" class="form-select py-3 px-4"
-                                        aria-label="Default select example">
-                                        <option selected>Select Services</option>
+                                        aria-label="Select a service" required>
+                                        <option value="" selected>Select Services</option>
                                         <option value="Musculoskeletal Physiotherapy">Musculoskeletal Physiotherapy</option>
                                         <option value="Osteoarthritis Management">Osteoarthritis Management</option>
-                                        <option value="Message Therapy">Message Therapy</option>
+                                        <option value="Massage Therapy">Massage Therapy</option>
                                         <option value="Pain Management">Pain Management</option>
                                         <option value="Electrotherapy">Electrotherapy</option>
                                         <option value="Exercise Therapy">Exercise Therapy</option>
                                     </select>
+                                    <div class="invalid-feedback">
+                                        Please select a service.
+                                    </div>
                                 </div>
                                 <div class="col mb-3">
                                     <input name="date" type="date" class="form-control py-3 px-4"
-                                        id="subject" placeholder="Subject" required>
+                                        id="date" placeholder="Date" min="2025-05-14" required>
                                     <div class="invalid-feedback">
-                                        The field is required.
+                                        Please select a date.
+                                    </div>
+                                </div>
+                                <div class="col mb-3">
+                                    <select name="visit_type" class="form-select py-3 px-4"
+                                        aria-label="Select visit type" required>
+                                        <option value="" selected>Select Visit Type</option>
+                                        <option value="Clinic Visit">Clinic Visit</option>
+                                        <option value="Home Visit">Home Visit</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a visit type.
                                     </div>
                                 </div>
                             </div>
@@ -194,18 +199,16 @@
             </div>
         </section>
 
-
         <section class="section position-relative bg-attach-fixed"
             style="background-image: url(image/dummy-img-1920x900.jpg);">
             <div class="image-overlay-2"></div>
             <div class="r-container position-relative" style="z-index: 2;">
                 <div class="d-flex flex-column gap-3 text-white text-center align-items-center">
-                    <h3 class="font-1 fw-semibold" style="font-size: 48px;">Experiencing Joint Stiffness or Muscle Discomfort?</h3>
+                    <h3 class="font-1 fw-semibold" style="font-size: 48px;">Struggling with Joint Pain or Muscle Tension?</h3>
                     <p class="font-2 fw-light mx-auto" style="max-width: 912px;">
-                        Don't ignore the signs—whether it's pain, stiffness, or reduced mobility, our expert physiotherapists are here to help. Get personalized care and effective treatment to restore your strength and comfort.
+                        Don’t let pain hold you back. Our expert physiotherapists at SP Physio Care provide personalized treatments to relieve joint stiffness, reduce muscle tension, and help you move freely again.
                     </p>
-                    <a href="contact.html" class="btn button font-1 ls-2 fw-semibold fs-7 py-3 px-4">FREE
-                        CONSULTATION</a>
+                    <a href="contact.html" class="btn button font-1 ls-2 fw-semibold fs-7 py-3 px-4">FREE CONSULTATION</a>
                 </div>
             </div>
         </section>
@@ -224,7 +227,7 @@
                             <div class="d-flex flex-column gap-2 justify-content-center align-items-center">
                                 <div class="border-3 border rounded-3 p-3 mb-3"
                                     style="--bs-border-color: var(--accent-color-1);">
-                                    <img src="image/notebook.png" alt="" class="img-fluid" width="40" height="40">
+                                    <img src="image/notebook.png" alt="Appointment Icon" class="img-fluid" width="40" height="40">
                                 </div>
                                 <h6 class="font-1 m-0">Make an Appointment</h6>
                                 <p>
@@ -236,7 +239,7 @@
                             <div class="d-flex flex-column gap-2 justify-content-center align-items-center">
                                 <div class="border-3 border rounded-3 p-3 mb-3"
                                     style="--bs-border-color: var(--accent-color-1);">
-                                    <img src="image/consulting.png" alt="" class="img-fluid" width="40" height="40">
+                                    <img src="image/consulting.png" alt="Consultation Icon" class="img-fluid" width="40" height="40">
                                 </div>
                                 <h6 class="font-1 m-0">Consultation</h6>
                                 <p>
@@ -248,7 +251,7 @@
                             <div class="d-flex flex-column gap-2 justify-content-center align-items-center">
                                 <div class="border-3 border rounded-3 p-3 mb-3"
                                     style="--bs-border-color: var(--accent-color-1);">
-                                    <img src="image/back.png" alt="" class="img-fluid" width="40" height="40">
+                                    <img src="image/back.png" alt="Therapy Icon" class="img-fluid" width="40" height="40">
                                 </div>
                                 <h6 class="font-1 m-0">Therapy Session</h6>
                                 <p>
@@ -260,7 +263,7 @@
                             <div class="d-flex flex-column gap-2 justify-content-center align-items-center">
                                 <div class="border-3 border rounded-3 p-3 mb-3"
                                     style="--bs-border-color: var(--accent-color-1);">
-                                    <img src="image/reviews.png" alt="" class="img-fluid" width="40" height="40">
+                                    <img src="image/reviews.png" alt="Review Icon" class="img-fluid" width="40" height="40">
                                 </div>
                                 <h6 class="font-1 m-0">Satisfied Review</h6>
                                 <p>
@@ -279,7 +282,7 @@
                 <div class="d-flex flex-lg-row flex-column-reverse">
                     <div class="col col-lg-5 mb-3">
                         <div class="d-flex flex-column gap-3">
-                            <h3 class="accent-color font-1 fw-semibold fs-1">Our Patient Review</h3>
+                            <h3 class="accent-color font-1 fw-semibold fs-1">Our Patient Reviews</h3>
                             <p class="font-2 fw-light mx-auto" style="max-width: 912px;">
                                 We make a real difference in the lives of our patients. Here’s what they say about their journey with SP Physio Care.
                             </p>
@@ -329,13 +332,12 @@
                     </div>
                     <div class="col col-lg-7 mb-3">
                         <a href="image/dummy-img-600x700.jpg" data-fslightbox="gallery">
-                           <img src="image/dummy-img-600x700.jpg" alt="" class="img-fluid rounded-4">
+                            <img src="image/dummy-img-600x700.jpg" alt="Patient Review Image" class="img-fluid rounded-4">
                         </a>
                     </div>
                 </div>
             </div>
         </section>
-
     </main>
 
     <footer>
@@ -345,7 +347,7 @@
                     <div class="col col-lg-4">
                         <div class="d-flex flex-column gap-3 text-white">
                             <div class="logo-container">
-                                <img src="image/logo.png" alt="" class="img-fluid">
+                                <img src="image/logo.png" alt="SP Physio Care Logo" class="img-fluid">
                             </div>
                             <p>
                                 At SP Physio Care, we specialize in personalized physiotherapy solutions to help you regain strength, mobility, and a pain-free life. Whether you're recovering from an injury, managing chronic pain, or preparing for surgery, our expert care is tailored to meet your unique needs.
@@ -372,37 +374,37 @@
                                 <h5 class="font-2 mb-3">Quick Links</h5>
                                 <ul class="list gap-2">
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="index.html" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Home
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="about_us.html" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             About Us
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="services.html" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Services
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="appointment.html" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Appointment
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="blog.html" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Blog
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="contact.html" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Contact Us
                                         </a>
@@ -413,38 +415,37 @@
                                 <h5 class="font-2 mb-3">Services</h5>
                                 <ul class="list gap-2">
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="service_detail.html?service=musculoskeletal" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Musculoskeletal Physiotherapy
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="service_detail.html?service=osteoarthritis" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Osteoarthritis Management
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="service_detail.html?service=geriatric" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
-                                            Geriatric
-Physiotherapy
+                                            Geriatric Physiotherapy
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="service_detail.html?service=pain_management" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Pain Management
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="service_detail.html?service=electrotherapy" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Electrotherapy
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="service_detail.html?service=exercise_therapy" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Exercise Therapy
                                         </a>
@@ -470,7 +471,7 @@ Physiotherapy
                                             <span>contact@spphysiocare.com</span>
                                         </div>
                                     </div>
-                                    <div class="d-flex flex-row align-items-center gap-3 text-white">
+                                    <div class="d-flex flex-row gap-3 align-items-center text-white">
                                         <span class="fs-2">
                                             <i class="fa-solid fa-location-dot"></i>
                                         </span>
@@ -491,6 +492,14 @@ Physiotherapy
         </section>
     </footer>
 
+    <!-- Scripts -->
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/swiper-script.js"></script>
+    <script src="js/submit-form.js"></script>
+    <script src="js/vendor/isotope.pkgd.min.js"></script>
     <script src="js/vendor/fslightbox.js"></script>
     <script src="js/masonry.js"></script>
 </body>

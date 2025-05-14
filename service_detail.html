@@ -12,15 +12,6 @@
 </head>
 
 <body>
-    <!-- Scripts -->
-    <script src="js/vendor/bootstrap.bundle.min.js"></script>
-    <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/vendor/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/swiper-script.js"></script>
-    <script src="js/submit-form.js"></script>
-    <script src="js/vendor/isotope.pkgd.min.js"></script>
-
     <!-- Header -->
     <section class="sticky-top bg-accent-color-1">
         <div class="r-container">
@@ -62,7 +53,6 @@
                                     <li><a class="dropdown-item" href="appointment.html">Appointment</a></li>
                                     <li><a class="dropdown-item" href="therapist.html">Therapist</a></li>
                                     <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
-                                    
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -104,7 +94,7 @@
                     <h3 class="accent-color font-1 fw-semibold">Service detail</h3>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Service Detail</li>
                         </ol>
                     </nav>
@@ -117,8 +107,8 @@
                 <div class="row row-cols-1 row-cols-lg-2">
                     <div class="col col-lg-8">
                         <div class="d-flex flex-column">
-                            <img src="image/dummy-img-1920x900.jpg" alt="" class="img-fluid rounded-4">
-                            <h3 class="fw-semibold font-1">Musculoskeletal Physiotherapy</h3>
+                            <img id="main-image" src="image/dummy-img-1920x900.jpg" alt="Service Image" class="img-fluid rounded-4">
+                            <h3 id="service-title" class="fw-semibold font-1">Musculoskeletal Physiotherapy</h3>
                             <div class="d-flex flex-row gap-3 mb-3">
                                 <div class="d-flex gap-2 align-items-center">
                                     <i class="fa-regular fa-folder"></i>
@@ -127,10 +117,10 @@
                                 |
                                 <div class="d-flex gap-2 align-items-center">
                                     <i class="fa-regular fa-file-lines"></i>
-                                    Musculoskeletal Physiotherapy
+                                    <span id="service-category">Musculoskeletal Physiotherapy</span>
                                 </div>
                             </div>
-                            <p>
+                            <p class="service-description">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum ultrices nisi,
                                 at congue sapien lobortis vel. Sed maximus tincidunt mi et luctus. Phasellus gravida
                                 elit nec lectus commodo, et pretium tortor fermentum. Quisque massa justo, posuere a
@@ -143,48 +133,21 @@
                             </p>
                             <div class="row row-cols-1 row-cols-lg-2 mb-3">
                                 <div class="col col-lg-7">
-                                    <img src="image/dummy-img-600x500.jpg" alt="" class="img-fluid rounded-3">
+                                    <img id="treatment-image" src="image/dummy-img-600x500.jpg" alt="Treatment Image" class="img-fluid rounded-3">
                                 </div>
                                 <div class="col col-lg-5">
                                     <h6>The Treatment You Get</h6>
-                                    <p>Aliquam ex nibh, rhoncus quis mi nec, imperdiet mattis est suspendisse.</p>
+                                    <p class="treatment-description">Aliquam ex nibh, rhoncus quis mi nec, imperdiet mattis est suspendisse.</p>
                                     <ul class="list gap-1">
                                         <li class="d-flex flex-row gap-2 align-items-center">
                                             <i class="fa-regular fa-circle-dot"></i>
-                                            Aenean euismod eros
+                                            Aenean euismfdfaod eros
                                         </li>
-                                        <li class="d-flex flex-row gap-2 align-items-center">
-                                            <i class="fa-regular fa-circle-dot"></i>
-                                            Duis vestibulum magna quis
-                                        </li>
-                                        <li class="d-flex flex-row gap-2 align-items-center">
-                                            <i class="fa-regular fa-circle-dot"></i>
-                                            Quisque congue gravida
-                                        </li>
-                                        <li class="d-flex flex-row gap-2 align-items-center">
-                                            <i class="fa-regular fa-circle-dot"></i>
-                                            In hac habitasse
-                                        </li>
-                                        <li class="d-flex flex-row gap-2 align-items-center">
-                                            <i class="fa-regular fa-circle-dot"></i>
-                                            Maecenas dictum fringilla
-                                        </li>
-                                        <li class="d-flex flex-row gap-2 align-items-center">
-                                            <i class="fa-regular fa-circle-dot"></i>
-                                            Aenean euismod eros
-                                        </li>
-                                        <li class="d-flex flex-row gap-2 align-items-center">
-                                            <i class="fa-regular fa-circle-dot"></i>
-                                            Integer urna magna
-                                        </li>
-                                        <li class="d-flex flex-row gap-2 align-items-center">
-                                            <i class="fa-regular fa-circle-dot"></i>
-                                            Nullam eu augue volutpat
-                                        </li>
+                                        <!-- Other list items will be updated dynamically -->
                                     </ul>
                                 </div>
                             </div>
-                            <p>
+                            <p class="additional-details">
                                 Aliquam ex nibh, rhoncus quis mi nec, imperdiet mattis est. Suspendisse potenti. Duis
                                 vestibulum magna quis suscipit tempus. Nunc pretium placerat condimentum. Praesent sed
                                 turpis ut sem bibendum euismod ut in lacus. Quisque congue gravida interdum. Quisque
@@ -198,50 +161,7 @@
                                         <i class="fa-regular fa-circle-dot"></i>
                                         Aenean euismod eros
                                     </li>
-                                    <li class="col mb-1 d-flex flex-row gap-2 align-items-center">
-                                        <i class="fa-regular fa-circle-dot"></i>
-                                        Maecenas dictum fringilla
-                                    </li>
-                                    <li class="col mb-1 d-flex flex-row gap-2 align-items-center">
-                                        <i class="fa-regular fa-circle-dot"></i>
-                                        Duis vestibulum magna
-                                    </li>
-                                    <li class="col mb-1 d-flex flex-row gap-2 align-items-center">
-                                        <i class="fa-regular fa-circle-dot"></i>
-                                        Duis vestibulum magna
-                                    </li>
-                                    <li class="col mb-1 d-flex flex-row gap-2 align-items-center">
-                                        <i class="fa-regular fa-circle-dot"></i>
-                                        Aenean euismod eros
-                                    </li>
-                                    <li class="col mb-1 d-flex flex-row gap-2 align-items-center">
-                                        <i class="fa-regular fa-circle-dot"></i>
-                                        Quisque congue gravida
-                                    </li>
-                                    <li class="col mb-1 d-flex flex-row gap-2 align-items-center">
-                                        <i class="fa-regular fa-circle-dot"></i>
-                                        Quisque congue gravida
-                                    </li>
-                                    <li class="col mb-1 d-flex flex-row gap-2 align-items-center">
-                                        <i class="fa-regular fa-circle-dot"></i>
-                                        Integer urna magna
-                                    </li>
-                                    <li class="col mb-1 d-flex flex-row gap-2 align-items-center">
-                                        <i class="fa-regular fa-circle-dot"></i>
-                                        Maecenas dictum fringilla
-                                    </li>
-                                    <li class="col mb-1 d-flex flex-row gap-2 align-items-center">
-                                        <i class="fa-regular fa-circle-dot"></i>
-                                        In hac habitasse
-                                    </li>
-                                    <li class="col mb-1 d-flex flex-row gap-2 align-items-center">
-                                        <i class="fa-regular fa-circle-dot"></i>
-                                        Nullam eu augue volutpat
-                                    </li>
-                                    <li class="col mb-1 d-flex flex-row gap-2 align-items-center">
-                                        <i class="fa-regular fa-circle-dot"></i>
-                                        Aenean euismod eros
-                                    </li>
+                                    <!-- Other list items will be updated dynamically -->
                                 </ul>
                             </div>
                         </div>
@@ -292,7 +212,7 @@
                                             <option selected>Select Services</option>
                                             <option value="Musculoskeletal Physiotherapy">Musculoskeletal Physiotherapy</option>
                                             <option value="Osteoarthritis Management">Osteoarthritis Management</option>
-                                            <option value="Message Therapy">Message Therapy</option>
+                                            <option value="Geriatric Physiotherapy">Geriatric Physiotherapy</option>
                                             <option value="Pain Management">Pain Management</option>
                                             <option value="Electrotherapy">Electrotherapy</option>
                                             <option value="Exercise Therapy">Exercise Therapy</option>
@@ -300,7 +220,7 @@
                                     </div>
                                     <div class="mb-3">
                                         <input name="date" type="date" class="form-control py-3 px-4"
-                                            id="subject" required>
+                                            id="date" min="2025-05-13" required>
                                         <div class="invalid-feedback">
                                             The field is required.
                                         </div>
@@ -312,7 +232,7 @@
                                     </div>
                                 </form>
                             </div>
-                            <div class="position-relative  overflow-hidden rounded-3"
+                            <div class="position-relative overflow-hidden rounded-3"
                                 style="background-image: url(image/dummy-img-1920x900.jpg); background-size: cover; background-position: center;">
                                 <div class="image-overlay-2"></div>
                                 <div class="r-container position-relative" style="z-index: 2;">
@@ -325,36 +245,34 @@
                                 </div>
                             </div>
                             <div class="rounded-3 bg-accent-color-1 p-5">
-                                <h5 class="font-2 mb-3 text-white border-bottom border-3 border-white w-75 pb-3">Other
-                                    Services</h5>
+                                <h5 class="font-2 mb-3 text-white border-bottom border-3 border-white w-75 pb-3">Other Services</h5>
                                 <ul class="list gap-2">
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="service_detail.html?service=osteoarthritis" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Osteoarthritis Management
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="service_detail.html?service=geriatric" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
-                                            Geriatric
-Physiotherapy
+                                            Geriatric Physiotherapy
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="service_detail.html?service=pain_management" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Pain Management
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="service_detail.html?service=electrotherapy" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Electrotherapy
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="service_detail.html?service=exercise_therapy" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Exercise Therapy
                                         </a>
@@ -362,8 +280,7 @@ Physiotherapy
                                 </ul>
                             </div>
                             <div class="rounded-3 bg-accent-color-1 p-5">
-                                <h5 class="font-2 mb-3 text-white border-bottom border-3 border-white w-75 pb-3">Follow
-                                    Us On</h5>
+                                <h5 class="font-2 mb-3 text-white border-bottom border-3 border-white w-75 pb-3">Follow Us On</h5>
                                 <div class="social-container">
                                     <a href="https://www.facebook.com" class="social-item bg-accent-color">
                                         <i class="fa-brands fa-facebook"></i>
@@ -405,7 +322,8 @@ Physiotherapy
                                                 <h1><i class="fa-solid fa-quote-right"></i></h1>
                                                 <p class="text-gray mb-4 fst-italic font-1">
                                                     "I had severe back pain for months. The therapists here understood my problem well and gave 
-                                                    me the right treatment. Now I feel much better and more active."</p>
+                                                    me the right treatment. Now I feel much better and more active."
+                                                </p>
                                                 <div class="d-flex flex-column flex-grow-1">
                                                     <h6 class="font-2 lh-1">Rajesh Kumar</h6>
                                                     <span class="text-gray">IT Professional</span>
@@ -416,7 +334,8 @@ Physiotherapy
                                             <div class="d-flex flex-column bg-accent-color rounded-4 p-5 text-white">
                                                 <h1><i class="fa-solid fa-quote-right"></i></h1>
                                                 <p class="text-gray mb-4 fst-italic font-1">
-                                                    "After my knee surgery, I struggled to walk properly. Thanks to SP Physio Care, I regained my strength and confidence. The staff is so caring and helpful."</p>
+                                                    "After my knee surgery, I struggled to walk properly. Thanks to SP Physio Care, I regained my strength and confidence. The staff is so caring and helpful."
+                                                </p>
                                                 <div class="d-flex flex-column flex-grow-1">
                                                     <h6 class="font-2 lh-1">Priya Menon</h6>
                                                     <span class="text-gray">Homemaker</span>
@@ -427,7 +346,8 @@ Physiotherapy
                                             <div class="d-flex flex-column bg-accent-color rounded-4 p-5 text-white">
                                                 <h1><i class="fa-solid fa-quote-right"></i></h1>
                                                 <p class="text-gray mb-4 fst-italic font-1">
-                                                    "I went for shoulder pain due to arthritis. They used advanced therapy and gave me exercises. The pain has reduced a lot. Very professional and friendly team."</p>
+                                                    "I went for shoulder pain due to arthritis. They used advanced therapy and gave me exercises. The pain has reduced a lot. Very professional and friendly team."
+                                                </p>
                                                 <div class="d-flex flex-column flex-grow-1">
                                                     <h6 class="font-2 lh-1">Arvind Patel</h6>
                                                     <span class="text-gray">Retired Teacher</span>
@@ -441,7 +361,7 @@ Physiotherapy
                     </div>
                     <div class="col col-lg-7 mb-3">
                         <a href="image/dummy-img-600x700.jpg" data-fslightbox="gallery">
-                           <img src="image/dummy-img-600x700.jpg" alt="" class="img-fluid rounded-4">
+                            <img src="image/dummy-img-600x700.jpg" alt="" class="img-fluid rounded-4">
                         </a>
                     </div>
                 </div>
@@ -484,37 +404,37 @@ Physiotherapy
                                 <h5 class="font-2 mb-3">Quick Links</h5>
                                 <ul class="list gap-2">
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="index.html" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Home
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="about_us.html" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             About Us
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="services.html" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Services
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="appointment.html" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Appointment
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="blog.html" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Blog
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="contact.html" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Contact Us
                                         </a>
@@ -525,38 +445,37 @@ Physiotherapy
                                 <h5 class="font-2 mb-3">Services</h5>
                                 <ul class="list gap-2">
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="service_detail.html?service=musculoskeletal" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Musculoskeletal Physiotherapy
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="service_detail.html?service=osteoarthritis" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Osteoarthritis Management
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="service_detail.html?service=geriatric" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
-                                            Geriatric
-Physiotherapy
+                                            Geriatric Physiotherapy
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="service_detail.html?service=pain_management" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Pain Management
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="service_detail.html?service=electrotherapy" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Electrotherapy
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="" class="d-flex flex-row gap-3 align-items-center link">
+                                        <a href="service_detail.html?service=exercise_therapy" class="d-flex flex-row gap-3 align-items-center link">
                                             <i class="fa-regular fa-circle-dot"></i>
                                             Exercise Therapy
                                         </a>
@@ -603,8 +522,17 @@ Physiotherapy
         </section>
     </footer>
 
+    <!-- Scripts -->
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/swiper-script.js"></script>
+    <script src="js/submit-form.js"></script>
+    <script src="js/vendor/isotope.pkgd.min.js"></script>
     <script src="js/vendor/fslightbox.js"></script>
     <script src="js/masonry.js"></script>
+    <script src="js/service-detail.js"></script>
 </body>
 
 </html>
