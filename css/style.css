@@ -67,8 +67,6 @@
     --font-2: 'Raleway', sans-serif;
 } */
 
-
-
 /* :root {
     --primary-color: #1E88E5;     
     --accent-color: #66BB6A;      
@@ -704,7 +702,6 @@ a {
     color: var(--accent-color);
 }
 
-
 .request-loader::after,
 .request-loader::before {
     opacity: 0.2;
@@ -881,8 +878,6 @@ a {
     transform: none;
 }
 
-
-
 @media only screen and (max-width:993px) {
     h1 {
         font-size: 48px;
@@ -941,5 +936,17 @@ a {
 
     .outer-margin {
         margin-right: 0;
+    }
+}
+
+/* Fix for banner and satisfaction section overlap on mobile */
+@media only screen and (max-width: 576px) {
+    .banner-section {
+        height: 70vh !important; /* Reduce banner height on mobile */
+        padding-bottom: 8rem !important; /* Override default 6em to ensure space for button */
+    }
+
+    .satisfaction-section {
+        margin-top: 0 !important; /* Remove negative margin on mobile */
     }
 }
