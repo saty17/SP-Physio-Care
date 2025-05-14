@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read detailed blog posts from SP Physio Care on physiotherapy, pain management, and wellness. Book an appointment for personalized care.">
     <!-- Favicon -->
     <link rel="icon" href="image/favicon.png" type="image/png">
     <!-- Stylesheet -->
@@ -18,7 +19,7 @@
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <div class="logo-container">
-                        <img src="image/logo.png" alt="" class="img-fluid">
+                        <img src="image/logo.png" alt="SP Physio Care Logo" class="img-fluid">
                     </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -40,8 +41,7 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="services.html">Services</a></li>
-                                    <li><a class="dropdown-item" href="service_detail.html">Service Detail</a>
-                                    </li>
+                                    <li><a class="dropdown-item" href="service_detail.html">Service Detail</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -74,7 +74,7 @@
                                 <span class="fs-2"><i class="fa-solid fa-phone"></i></span>
                                 <div class="d-flex flex-column">
                                     <span>Call Us</span>
-                                    <span>+123-234-1234</span>
+                                    <span>+91 95066 66005</span>
                                 </div>
                             </div>
                         </div>
@@ -87,7 +87,7 @@
 
     <main>
         <!-- Banner -->
-        <section class="section position-relative" style="background-image: url(image/physiotherapy-banner.jpg);">
+        <section class="section position-relative" style="background-image: url(image/dummy-img-1920x900.jpg);">
             <div class="image-overlay"></div>
             <div class="r-container position-relative h-100" style="z-index: 2;">
                 <div class="d-flex flex-column gap-3">
@@ -201,7 +201,7 @@
                                         role="alert" aria-live="assertive" aria-atomic="true">
                                         <div class="d-flex">
                                             <div class="toast-body">
-                                                Your Appointment Message Send Successfully!.
+                                                Your Appointment Message Sent Successfully!
                                             </div>
                                             <button type="button" class="btn me-2 m-auto text-white"
                                                 data-bs-dismiss="toast" aria-label="Close">
@@ -223,28 +223,51 @@
                                     </div>
                                     <div class="mb-3">
                                         <input type="tel" class="form-control py-3 px-4" name="phone" id="phone"
-                                            placeholder="Phone" required>
+                                            placeholder="Phone (e.g., 9876543210)" pattern="[6-9][0-9]{9}"
+                                            title="Please enter a valid 10-digit Indian phone number starting with 6, 7, 8, or 9"
+                                            required>
+                                        <div class="invalid-feedback">
+                                            Please enter a valid 10-digit Indian phone number starting with 6, 7, 8, or 9.
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control py-3 px-4" name="email" id="email"
+                                            placeholder="Email" required>
                                         <div class="invalid-feedback">
                                             The field is required.
                                         </div>
                                     </div>
                                     <div class="mb-3">
                                         <select name="service" class="form-select py-3 px-4"
-                                            aria-label="Default select example">
-                                            <option selected>Select Services</option>
+                                            aria-label="Select a service" required>
+                                            <option value="" selected>Select Services</option>
                                             <option value="Musculoskeletal Physiotherapy">Musculoskeletal Physiotherapy</option>
                                             <option value="Osteoarthritis Management">Osteoarthritis Management</option>
-                                            <option value="Message Therapy">Message Therapy</option>
+                                            <option value="Massage Therapy">Massage Therapy</option>
                                             <option value="Pain Management">Pain Management</option>
                                             <option value="Electrotherapy">Electrotherapy</option>
                                             <option value="Exercise Therapy">Exercise Therapy</option>
                                         </select>
+                                        <div class="invalid-feedback">
+                                            Please select a service.
+                                        </div>
                                     </div>
                                     <div class="mb-3">
                                         <input name="date" type="date" class="form-control py-3 px-4"
-                                            id="subject" required>
+                                            id="date" min="2025-05-14" required>
                                         <div class="invalid-feedback">
-                                            The field is required.
+                                            Please select a date.
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <select name="visit_type" class="form-select py-3 px-4"
+                                            aria-label="Select visit type" required>
+                                            <option value="" selected>Select Visit Type</option>
+                                            <option value="Clinic Visit">Clinic Visit</option>
+                                            <option value="Home Visit">Home Visit</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Please select a visit type.
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-center">
@@ -310,7 +333,7 @@
                     <div class="col col-lg-4">
                         <div class="d-flex flex-column gap-3 text-white">
                             <div class="logo-container">
-                                <img src="image/logo.png" alt="" class="img-fluid">
+                                <img src="image/logo.png" alt="SP Physio Care Logo" class="img-fluid">
                             </div>
                             <p>
                                 At SP Physio Care, we specialize in personalized physiotherapy solutions to help you regain strength, mobility, and a pain-free life. Whether you're recovering from an injury, managing chronic pain, or preparing for surgery, our expert care is tailored to meet your unique needs.
@@ -422,7 +445,7 @@
                                         <span class="fs-2"><i class="fa-solid fa-phone"></i></span>
                                         <div class="d-flex flex-column">
                                             <span>Phone</span>
-                                            <span>+123-234-1234</span>
+                                            <span>+91 95066 66005</span>
                                         </div>
                                     </div>
                                     <div class="d-flex flex-row align-items-center gap-3 text-white">

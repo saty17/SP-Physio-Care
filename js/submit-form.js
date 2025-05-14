@@ -39,7 +39,7 @@ $(function () {
                                 `Please confirm the appointment at your earliest convenience.`;
 
                 // WhatsApp number for SP Physio Care
-                const whatsappNumber = '+918104047471';
+                const whatsappNumber = '+919506666005';
                 const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
 
                 // Show toast notification
@@ -74,7 +74,7 @@ $(function () {
                                 `Please respond at your earliest convenience.`;
 
                 // WhatsApp number for SP Physio Care
-                const whatsappNumber = '+918104047471';
+                const whatsappNumber = '+919506666005';
                 const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
 
                 // Show success toast
@@ -92,5 +92,6 @@ $(function () {
         }
 
         form.addClass('was-validated');
+
     });
 });

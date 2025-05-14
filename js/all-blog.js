@@ -7,7 +7,7 @@ const blogs = [
         author: "SP Physio Care",
         excerpt: "Learn how physiotherapy can effectively treat neck pain caused by poor posture, stress, or injury.",
         image: "image/blog1.jpg", // Replace with actual image path
-        content: "Neck pain is a common issue that can stem from various causes, including poor posture, stress, or injuries. Physiotherapy offers a non-invasive solution to alleviate pain and improve mobility. In this article, we explore the causes of neck pain, the role of physiotherapy in treatment, and practical tips to prevent future discomfort. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum ultrices nisi, at congue sapien lobortis..."
+        content: "Neck pain is a common issue that can stem from various causes, including poor posture, stress, or injuries. Physiotherapy offers a non-invasive solution to alleviate pain and improve mobility. In this article, we explore the causes of neck pain, the role of physiotherapy in treatment, and practical tips to prevent future discomfort..."
     },
     {
         id: 2,
@@ -16,7 +16,7 @@ const blogs = [
         author: "SP Physio Care",
         excerpt: "Back pain can signal underlying issues. Discover what your body is trying to tell you and how physiotherapy can help.",
         image: "image/blog2.jpg", // Replace with actual image path
-        content: "Back pain is often a symptom of deeper issues, such as muscle imbalances, poor posture, or even stress. In this blog, we dive into the common causes of back pain, how to interpret the signals your body is sending, and how physiotherapy can provide long-term relief. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum ultrices nisi, at congue sapien lobortis..."
+        content: "Back pain is often a symptom of deeper issues, such as muscle imbalances, poor posture, or even stress. In this blog, we dive into the common causes of back pain, how to interpret the signals your body is sending, and how physiotherapy can provide long-term relief..."
     },
     {
         id: 3,
@@ -25,7 +25,7 @@ const blogs = [
         author: "SP Physio Care",
         excerpt: "Good posture is key to overall health. Here are physiotherapy tips to help you stand tall and pain-free.",
         image: "image/blog3.jpg", // Replace with actual image path
-        content: "Poor posture can lead to a host of problems, including back pain, neck pain, and reduced mobility. In this article, we share expert physiotherapy tips to improve your posture, strengthen your core, and maintain a healthy spine. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum ultrices nisi, at congue sapien lobortis..."
+        content: "Poor posture can lead to a host of problems, including back pain, neck pain, and reduced mobility. In this article, we share expert physiotherapy tips to improve your posture, strengthen your core, and maintain a healthy spine..."
     },
     {
         id: 4,
@@ -34,7 +34,7 @@ const blogs = [
         author: "SP Physio Care",
         excerpt: "A patient shares their 5-month journey with chiropractic care and its impact on their mobility and pain.",
         image: "image/blog4.jpg", // Replace with actual image path
-        content: "Chiropractic care can be a game-changer for those dealing with chronic pain or mobility issues. In this blog, a patient shares their 5-month experience with a chiropractor, detailing the improvements in their mobility, pain levels, and overall quality of life. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum ultrices nisi, at congue sapien lobortis..."
+        content: "Chiropractic care can be a game-changer for those dealing with chronic pain or mobility issues. In this blog, a patient shares their 5-month experience with a chiropractor, detailing the improvements in their mobility, pain levels, and overall quality of life..."
     },
     {
         id: 5,
@@ -43,7 +43,7 @@ const blogs = [
         author: "SP Physio Care",
         excerpt: "Female mentors play a crucial role in physiotherapy. Learn why diversity in mentorship matters.",
         image: "image/blog5.jpg", // Replace with actual image path
-        content: "Diversity in mentorship is essential for the growth of the physiotherapy field. In this article, we discuss the importance of female mentors in physiotherapy, the unique perspectives they bring, and how they inspire the next generation of therapists. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum ultrices nisi, at congue sapien lobortis..."
+        content: "Diversity in mentorship is essential for the growth of the physiotherapy field. In this article, we discuss the importance of female mentors in physiotherapy, the unique perspectives they bring, and how they inspire the next generation of therapists..."
     },
     {
         id: 6,
@@ -52,7 +52,7 @@ const blogs = [
         author: "SP Physio Care",
         excerpt: "A comprehensive guide to understanding musculoskeletal physiotherapy and its benefits for pain relief.",
         image: "image/blog6.jpg", // Replace with actual image path
-        content: "Musculoskeletal physiotherapy is a specialized field that focuses on treating issues related to joints, muscles, and bones. In this comprehensive guide, we break down what musculoskeletal physiotherapy is, how it works, and the benefits it offers for pain relief and mobility. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum ultrices nisi, at congue sapien lobortis..."
+        content: "Musculoskeletal physiotherapy is a specialized field that focuses on treating issues related to joints, muscles, and bones. In this comprehensive guide, we break down what musculoskeletal physiotherapy is, how it works, and the benefits it offers for pain relief and mobility..."
     }
 ];
 
